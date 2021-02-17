@@ -1,5 +1,3 @@
-@echo "subiendo a Git.."
-TIMEOUT /T 4
 @echo off
 For /f "tokens=2-4 delims=/ " %%a in ('date /t') do (set mydate=%%c-%%a-%%b)
 set hora=%time:~0,2%
