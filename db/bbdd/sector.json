@@ -1,2 +1,0 @@
-{"_id":ObjectId("5faca7d4674817b599a0851e"),"nombreSector":"sector1","idTorre":ObjectId("5fbc7bef4f37a02beadd303e"),"statusSector":"Activo","createdAt":ISODate("2020-11-26T04:15:11.804Z"),"updatedAt":ISODate("2020-11-26T04:15:11.804Z"),"__v":0,"descripcionSector":"sector de casa"}
-{"_id":ObjectId("5facba8a674817b599a08521"),"nombreSector":"sector2","idTorre":ObjectId("5fbc7bef4f37a02beadd303e"),"statusSector":"Activo","createdAt":ISODate("2020-11-26T04:15:11.804Z"),"updatedAt":ISODate("2020-11-26T04:15:11.804Z"),"__v":0,"descripcionSector":"alquiler de el bosque"}

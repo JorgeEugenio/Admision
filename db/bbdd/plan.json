@@ -1,3 +1,0 @@
-{"_id":ObjectId("5faa225fe9b0337ae9e8a358"),"nombrePlan":"8M","descripcion":"8 Mbps","costo":60,"status":"Activo","createdAt":ISODate("2020-11-26T04:15:11.804Z"),"updatedAt":ISODate("2020-11-26T04:15:11.804Z"),"__v":0}
-{"_id":ObjectId("5faa22afe9b0337ae9e8a359"),"nombrePlan":"15M","descripcion":"15 Mbps","costo":70,"status":"Activo","createdAt":ISODate("2020-11-26T04:15:11.804Z"),"updatedAt":ISODate("2020-11-26T04:15:11.804Z"),"__v":0}
-{"_id":ObjectId("5faa3522c6f0e168b53c2efc"),"nombrePlan":"4M","descripcion":"4 Mbps","costo":50,"status":"Activo","createdAt":ISODate("2020-11-26T04:15:11.804Z"),"updatedAt":ISODate("2020-11-26T04:15:11.804Z"),"__v":0}

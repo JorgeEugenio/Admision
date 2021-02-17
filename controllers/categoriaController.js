@@ -3,23 +3,15 @@ const Categoria =require('../models/Categoria')
 async function addCategoria (req,res){
     try {
         const {
-            _1,
-            _2 ,
-            _3 ,
-            _4 ,
-            _5 ,
-            _6
+            _id,
+            name
             
             
         } = req.body
 
         const categoria = Categoria({
-            _1,
-            _2 ,
-            _3 ,
-            _4 ,
-            _5 ,
-            _6
+            _id,
+           name
         })
         await categoria.save()
         res.status(201).send(categoria)
@@ -28,8 +20,12 @@ async function addCategoria (req,res){
     }
 }
 async function getCategorias(req, res){
-    const categorias = await Categoria.find()
-    //console.log(categorias);
+    const categorias = await Categoria.aggregate()
+                                        .project({
+                                            "name":"$name"
+                                        })  
+
+    console.log(categorias);
     res.status(200).send(categorias)
     }
 async function updateCategoria(req,res){

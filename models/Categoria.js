@@ -3,11 +3,9 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const categoriaSchema = Schema({
-    _1: String, //Categoria o MT001
-    _2: String,//Rimac001, Tienda Delia
-    _3: String,
-    _4: String,
-    _5: String,
+    "_id": Number,
+    "name": String, //Categoria o MT001
+    
 },{
     timestamps: true
 })
