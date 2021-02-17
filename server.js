@@ -4,12 +4,9 @@ require('dotenv').config()
 const app = require('./app')
 const connectDB = require('./db/mongodb')
 const { appConfig, dbConfig } = require('./config');
-const Cliente = require('./models/Cliente');
 
 //node server
 const server = require('http').createServer(app);
-module.exports.io = require('socket.io')(server);
-require('./sockets/socket');
 
 let initApp = async (appConfig, dbConfig) => {
     try {
