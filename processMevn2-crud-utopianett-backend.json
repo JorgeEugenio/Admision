@@ -1,0 +1,10 @@
+{
+    apps : [{
+      name        : "UtopianettBackend",
+      script      : "./server.js",
+      instances: 1,
+      env: {
+        "PORT": "8000"
+      }
+    }]
+  }

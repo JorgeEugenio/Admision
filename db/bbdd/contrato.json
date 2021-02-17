@@ -1,0 +1,2 @@
+{"_id":"5fbf24fee9013435d51b3389","statusContrato":"Inactivo","codigoContrato":"codigos","idCliente":ObjectId("5fbd62384f953b38aa62fb54"),"createdAt":ISODate("2020-11-26T03:46:06.979Z"),"updatedAt":ISODate("2020-11-26T03:46:34.632Z"),"__v":0}
+{"_id":"5fbf2bcf9c9b2b07a6bc1730","statusContrato":"Activo","codigoContrato":"nuevo","idCliente":ObjectId("5fbd62384f953b38aa62fb54"),"createdAt":ISODate("2020-11-26T04:15:11.804Z"),"updatedAt":ISODate("2020-11-26T04:15:27.893Z"),"__v":0}

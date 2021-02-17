@@ -1,0 +1,47 @@
+const express = require('express')
+const morgan = require('morgan');
+const bodyParser = require('body-parser')
+const cors = require('cors')
+//const productsRoutes = require('./routes/product')
+const servicioRoute = require('./routes/servicioRoute')
+const clienteRoute = require('./routes/clienteRoute')
+const planRoute = require('./routes/planRoute')
+const cuentaPagoRoute = require('./routes/cuentaPagoRoute')
+const cuentaTorre = require('./routes/torreRoute')
+const sectorRoute = require('./routes/sectorRoute')
+const ejemplosRoute = require('./routes/ejemploRoute')
+const clienteDetalleRoute = require('./routes/clienteDetalleRoute')
+const contratoRoute = require('./routes/contratoRoute')
+const contratoDetalleRoute = require('./routes/contratoDetalleRoute')
+const boletaDetalleRoute = require('./routes/boletaDetalleRoute')
+const boletaRoute = require('./routes/boletaRoute')
+const homeRoute = require('./routes/homeRoute')
+//const puntuacionesRoute = require('./routes/puntuaciones2Route')
+const app = express()
+
+app.use(cors())
+app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.json())
+
+// middlewares
+app.use(morgan('dev'));
+app.use(express.json());
+
+//app.use('/v1',productsRoutes)
+app.use('/v1',servicioRoute)
+app.use('/v1',clienteRoute)
+app.use('/v1',planRoute)
+app.use('/v1',cuentaPagoRoute)
+app.use('/v1',cuentaTorre)
+app.use('/v1',sectorRoute)
+app.use('/v1',ejemplosRoute)
+app.use('/v1',clienteDetalleRoute)
+app.use('/v1',contratoRoute)
+app.use('/v1',contratoDetalleRoute)
+app.use('/v1',boletaDetalleRoute)
+app.use('/v1',boletaRoute)
+app.use('/v1',homeRoute)
+//app.use('/v1',puntuacionesRoute)
+//app.use('/public', express.static(`${__dirname}/storage/imgs`))
+app.use(express.static(`${__dirname}/public`))
+module.exports = app
