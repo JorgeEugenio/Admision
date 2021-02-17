@@ -1,12 +1,12 @@
 const Categoria =require('../models/Categoria')
+const connectDB = require('../db/mongodb')
 
 async function addCategoria (req,res){
     try {
+        await connectDB(dbConfig)
         const {
             _id,
             name
-            
-            
         } = req.body
 
         const categoria = Categoria({
