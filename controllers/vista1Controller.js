@@ -2,7 +2,7 @@ const Pregunta =require('../models/Pregunta')
 
 async function getVista1(req, res){
     const preguntas = await Pregunta.aggregate()
-                                    .match({ _id: 164 })
+                                    //.match({ _id: 164 })
                                     .lookup({
                                         from: "categorias",
                                         localField: "category",
