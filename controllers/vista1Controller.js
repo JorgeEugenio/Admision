@@ -19,7 +19,6 @@ async function getVista1(req, res){
                                         "difficulty":"$detalles.difficulty",
                                         "category":"$detalles.name",
                                     })
-                                    console.log(preguntas);
     res.status(200).send(preguntas)
     }
 

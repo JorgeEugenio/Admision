@@ -25,7 +25,7 @@ async function getCategorias(req, res){
                                             "name":"$name"
                                         })  
 
-    console.log(categorias);
+    //console.log(categorias);
     res.status(200).send(categorias)
     }
 async function updateCategoria(req,res){
