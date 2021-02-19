@@ -21,9 +21,16 @@ async function getVista1(req, res){
                                     })
     res.status(200).send({preguntas})
     //res.json(preguntas)
-    console.log(preguntas);
+    //console.log(preguntas);
     }
+async function getVista2(req, res){
+        const preguntas = await Pregunta.find()
+    res.status(200).send({preguntas})
+    //res.json(preguntas)
+    console.log(preguntas);
+}
 
 module.exports = {
-    getVista1
+    getVista1,
+    getVista2
 }
