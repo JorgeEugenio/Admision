@@ -20,6 +20,7 @@ async function getVista1(req, res){
                                         "category":"$detalles.name",
                                     })
     res.status(200).send({preguntas})
+    //res.json(preguntas)
     console.log(preguntas);
     }
 
