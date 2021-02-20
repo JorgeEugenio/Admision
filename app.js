@@ -22,5 +22,5 @@ app.use('/v1',Pregunta)
 app.use('/v1',Vista1)
 //app.use('/v1',puntuacionesRoute)
 //app.use('/public', express.static(`${__dirname}/storage/imgs`))
-app.use(express.static(`${__dirname}/public`))
+app.use('/public', express.static(`${__dirname}/storage/img/`))
 module.exports = app

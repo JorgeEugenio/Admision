@@ -3,9 +3,9 @@ const { addPregunta, getPreguntas, getPregunta,updatePregunta,deletePregunta } =
 const api = express.Router()
 
 //api.post('/categoria',categoriaController.addPregunta)
-api.post('/pregunta', addPregunta)
-api.get('/pregunta', getPreguntas)
-api.get('/pregunta/:id', getPregunta)
-api.put('/pregunta/:id', updatePregunta)
-api.delete('/pregunta/:id',deletePregunta)
+api.post('/preguntadetalle', addPregunta)
+api.get('/preguntadetalle', getPreguntas)
+api.get('/preguntadetalle/:id', getPregunta)
+api.put('/preguntadetalle/:id', updatePregunta)
+api.delete('/preguntadetalle/:id',deletePregunta)
 module.exports = api

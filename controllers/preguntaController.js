@@ -3,14 +3,26 @@ const Pregunta =require('../models/Pregunta')
 async function addPregunta (req,res){
     try {
         const {
-            name
-            
+            _id,
+            answer,
+            category,
+            difficulty,
+            question
             
         } = req.body
 
         const pregunta = Pregunta({
-           name
+            _id,
+            answer,
+            category,
+            difficulty,
+            question
         })
+        if(req.file){
+            const { filename} = req.file
+            product.setImgUrl(filename)
+        }
+
         await pregunta.save()
         res.status(201).send(pregunta)
     } catch (e) {
